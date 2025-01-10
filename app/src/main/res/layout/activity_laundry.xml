@@ -228,12 +228,14 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/tambahkan"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tambahan"
                     android:layout_marginTop="15dp"
-                    android:textSize="15dp"/>
+                    android:text="Tambahan"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -255,12 +257,14 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:src="@drawable/pegawai"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pegawai"
                     android:layout_marginTop="5dp"
-                    android:textSize="15dp"/>
+                    android:text="Pegawai"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
