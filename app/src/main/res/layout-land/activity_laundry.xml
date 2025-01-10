@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".LaundryActivity">
         <TextView
             android:id="@+id/tvSelamat"
@@ -12,19 +13,19 @@
             android:layout_height="wrap_content"
             android:text="Selamat Pagi, Letitya"
             android:textSize="30sp"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="10dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
         <TextView
             android:id="@+id/tvTgl"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="08 Januari 2025"
             android:textSize="20sp"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="400dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@id/tvSelamat"/>
         <androidx.cardview.widget.CardView
@@ -32,7 +33,7 @@
             android:layout_width="320dp"
             android:layout_height="310dp"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
             app:cardCornerRadius="20dp"
             app:layout_constraintTop_toBottomOf="@id/tvSelamat"
             app:layout_constraintStart_toStartOf="parent">
@@ -76,7 +77,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/akun"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="20dp"
                     app:layout_constraintTop_toBottomOf="@id/vLine"
                     app:layout_constraintStart_toStartOf="parent"/>
@@ -86,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:text="Akun"
                     android:textSize="20sp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="35dp"
                     android:layout_marginStart="30dp"
                     app:layout_constraintStart_toEndOf="@id/ivAkun"
                     app:layout_constraintTop_toBottomOf="@id/vLine"/>
