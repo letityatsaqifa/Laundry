@@ -5,9 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pelanggan.DataPelangganActivity">
+    tools:context=".tambahan.DataTambahanActivity">
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvData_Pelanggan"
+        android:id="@+id/rvData_Tambahan"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </androidx.recyclerview.widget.RecyclerView>
@@ -17,7 +17,7 @@
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/fabDataPenggunaTambah"
+            android:id="@+id/fabDataTambahanTambah"
             android:src="@drawable/tambahkan"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -11,10 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Laundryy"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".cabang.TambahCabangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cabang.DataCabangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pegawai.TambahPegawaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pegawai.DataPegawaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tambahan.TambahTambahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tambahan.TamabahTambahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tambahan.DataTambahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layanan.TambahLayananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".layanan.DataLayananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelanggan.TambahPelangganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelanggan.DataPelangganActivity"
+            android:exported="false" />
         <activity
             android:name=".LaundryActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
