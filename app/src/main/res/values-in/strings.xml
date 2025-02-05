@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Laundryy</string>
+    <string name="tvCardPelanggan_Id">Id Pelanggan</string>
+    <string name="tvCardPelanggan_Nama">Nama Pelanggan</string>
+    <string name="tvCardPelanggan_Alamat">Alamat</string>
+    <string name="tvCardPelanggan_No">No HP</string>
+    <string name="btnCardPelanggan_Hubungi">Hubungi</string>
+    <string name="btnCardPelanggan_Lihat">Lihat</string>
+    <string name="tvCardPegawai_Id">Id Pegawai</string>
+    <string name="tvCardPegawai_Nama">Nama Pegawai</string>
+    <string name="tvCardPegawai_JK">Jenis Kelamin</string>
+    <string name="tvCardPegawai_Alamat">Alamat</string>
+    <string name="tvCardPegawai_No">No hp</string>
+    <string name="tvCardPegawai_Jabatan">Jabatan</string>
+    <string name="tvCardPegawai_Cabang">Cabang</string>
+    <string name="btnCardPegawai_Hubungi">Hubungi</string>
+    <string name="btnCardPegawai_Lihat">Lihat</string>
+    <string name="tvCardPelanggan_cabang">Terdaftar</string>
+    <string name="judulPelanggan">Tambah Pelanggan</string>
+    <string name="NamaPelanggan">Nama Pelanggan</string>
+    <string name="alamatPelanggan">Alamat</string>
+    <string name="noPelanggan">No HP</string>
+    <string name="cabangPelanggan">Nama Cabang</string>
+    <string name="btnSimpan">Simpan</string>
+    <string name="judulPegawai">Tambah Pegawai</string>
+    <string name="namaPegawai">Nama Pegawai</string>
+    <string name="jkPegawai">Jenis Kelamin</string>
+    <string name="alamatPegawai">Alamat</string>
+    <string name="noPegawai">No HP</string>
+    <string name="jabatanPegawai">Jabatan</string>
+    <string name="cabangPegawai">Cabang</string>
+</resources>

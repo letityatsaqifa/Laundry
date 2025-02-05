@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Laundryy</string>
+    <string name="tvCardPelanggan_Id">Id Pelanggan</string>
+    <string name="tvCardPelanggan_Nama">Nama Pelanggan</string>
+    <string name="tvCardPelanggan_Alamat">Alamat Pelanggan</string>
+    <string name="tvCardPelanggan_No">No Pelanggan</string>
+    <string name="btnCardPelanggan_Hubungi">Hubungi Pelanggan</string>
+    <string name="btnCardPelanggan_Lihat">Lihat Pelanggan</string>
+    <string name="tvCardPegawai_Id">Id Pegawai</string>
+    <string name="tvCardPegawai_Nama">nama pegawai</string>
+    <string name="tvCardPegawai_JK">jk</string>
+    <string name="tvCardPegawai_Alamat">alamat pegawai</string>
+    <string name="tvCardPegawai_No">no pegawai</string>
+    <string name="tvCardPegawai_Jabatan">jabatan Pegawai</string>
+    <string name="tvCardPegawai_Cabang">cabang pegawai</string>
+    <string name="btnCardPegawai_Hubungi">hubungi pegawai</string>
+    <string name="btnCardPegawai_Lihat">lihat pegawai</string>
+    <string name="tvCardPelanggan_cabang">cabang pelanggan</string>
+    <string name="judulPelanggan">judul + pelanggan</string>
+    <string name="NamaPelanggan">nama + pelanggan</string>
+    <string name="alamatPelanggan">alamat + pelanggan</string>
+    <string name="noPelanggan">no + pelanggan</string>
+    <string name="cabangPelanggan">cabang + pelanggan</string>
+    <string name="btnSimpan">btn simpan</string>
+    <string name="judulPegawai">judul pegawai</string>
+    <string name="namaPegawai">nama pegawai</string>
+    <string name="jkPegawai">jk pegawai</string>
+    <string name="alamatPegawai">alamat pegawai</string>
+    <string name="noPegawai">no pegawai</string>
+    <string name="jabatanPegawai">jabatan pegawai</string>
+    <string name="cabangPegawai">cabang pegawai</string>
 </resources>
