@@ -84,8 +84,8 @@ class TambahPelangganActivity : AppCompatActivity() {
             etNama.text.toString(),
             etAlamat.text.toString(),
             etNo.text.toString(),
+            timestamp = System.currentTimeMillis(),
             etCabang.text.toString(),
-            "timestamp"
         )
 
         pelangganBaru.setValue(data)

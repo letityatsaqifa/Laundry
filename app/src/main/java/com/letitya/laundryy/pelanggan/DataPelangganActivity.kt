@@ -54,7 +54,7 @@ class DataPelangganActivity : AppCompatActivity() {
                         val pelanggan = dataSnapshot.getValue(ModelPelanggan::class.java)
                         pelangganList.add(pelanggan!!)
                     }
-                    val adapter = DataPelangganAdapter(pelangganList)
+                    val adapter = DataPelangganAdapter(pelangganList, this@DataPelangganActivity)
                     rvDataPelanggan.adapter = adapter
                     adapter.notifyDataSetChanged()
                 }

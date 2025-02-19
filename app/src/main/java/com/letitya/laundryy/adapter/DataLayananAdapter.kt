@@ -1,5 +1,6 @@
 package com.letitya.laundryy.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.letitya.laundryy.R
 import com.letitya.laundryy.modeldata.ModelLayanan
 
-class DataLayananAdapter(private val listLayanan: ArrayList<ModelLayanan>) : RecyclerView.Adapter<DataLayananAdapter.ViewHolder> () {
+class DataLayananAdapter(private val listLayanan: ArrayList<ModelLayanan>, private val context: Context) : RecyclerView.Adapter<DataLayananAdapter.ViewHolder> () {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.carddatalayanan, parent, false)
@@ -21,8 +22,8 @@ class DataLayananAdapter(private val listLayanan: ArrayList<ModelLayanan>) : Rec
 
         holder.tvID.text = item.idLayanan ?: "Tidak ada ID"
         holder.tvNama.text = item.namaLayanan
-        holder.tvHarga.text = item.hargaLayanan
-        holder.tvCabang.text = item.cabangLayanan
+        holder.tvHarga.text = context.getString(R.string.harga) + ": " + item.hargaLayanan
+        holder.tvCabang.text = context.getString(R.string.cabang) + ": " + item.cabangLayanan
 
         holder.cvCard.setOnClickListener {
 

@@ -105,6 +105,7 @@ class TambahPegawaiActivity : AppCompatActivity() {
             etAlamat.text.toString(),
             etNo.text.toString(),
             etJabatan.text.toString(),
+            timestamp = System.currentTimeMillis(),
             etCabang.text.toString(),
         )
 

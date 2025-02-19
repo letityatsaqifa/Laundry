@@ -7,5 +7,6 @@ class ModelPegawai (
     val alamatPegawai: String? = null,
     val noHPPegawai: String? = null,
     val jabatanPegawai: String? = null,
+    val timestamp: Long? = null,
     val cabangPegawai: String? = null
 )

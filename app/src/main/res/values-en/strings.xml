@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Laundryy</string>
-    <string name="tvCardPelanggan_Id">"Customer Id: "</string>
+    <string name="tvCardPelanggan_Id">Customer Id:</string>
     <string name="tvCardPelanggan_Nama">Customer Name</string>
     <string name="tvCardPelanggan_Alamat">Address</string>
     <string name="tvCardPelanggan_No">Number Phone</string>
     <string name="btnCardPelanggan_Hubungi">Contact</string>
     <string name="btnCardPelanggan_Lihat">Show</string>
-    <string name="tvCardPegawai_Id">"Employee Id: "</string>
+    <string name="tvCardPegawai_Id">Employee Id:</string>
     <string name="tvCardPegawai_Nama">Employee Name</string>
     <string name="tvCardPegawai_JK">Gender</string>
     <string name="tvCardPegawai_Alamat">Address</string>
@@ -21,7 +21,7 @@
     <string name="NamaPelanggan">Customer Name</string>
     <string name="alamatPelanggan">Address</string>
     <string name="noPelanggan">Phone</string>
-    <string name="cabangPelanggan">Branch Name</string>
+    <string name="cabangPelanggan">Branch</string>
     <string name="btnSimpan">Save</string>
     <string name="judulPegawai">Add Employee</string>
     <string name="namaPegawai">Employee Name</string>
@@ -50,7 +50,7 @@
     <string name="gagal_simpan">Failed Save to Data</string>
     <string name="validasi_harga">Price Cannot be Empty</string>
     <string name="tvCardPelanggan_Terdaftar">Time</string>
-    <string name="tvLabelLayanan_Id">"Service Id: "</string>
+    <string name="tvLabelLayanan_Id">Service Id:</string>
     <string name="TambahLayanan">Add Service</string>
     <string name="NamaLayanan">Service Name</string>
     <string name="harga">Price</string>

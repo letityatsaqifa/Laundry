@@ -54,7 +54,7 @@ class DataPegawaiActivity : AppCompatActivity() {
                         val pegawai = dataSnapshot.getValue(ModelPegawai::class.java)
                         pegawaiList.add(pegawai!!)
                     }
-                    val adapter = DataPegawaiAdapter(pegawaiList)
+                    val adapter = DataPegawaiAdapter(pegawaiList, this@DataPegawaiActivity)
                     rvDataPegawai.adapter = adapter
                     adapter.notifyDataSetChanged()
                 }
