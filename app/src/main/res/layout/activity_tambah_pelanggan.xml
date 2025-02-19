@@ -93,7 +93,7 @@
         android:hint="@string/cabangPelanggan"
         android:layout_marginTop="15dp"
         android:padding="16dp"
-        android:inputType="phone"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/tvCabang"
         android:background="@drawable/border"/>
     <Button

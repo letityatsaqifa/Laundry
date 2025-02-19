@@ -18,9 +18,10 @@
             android:id="@+id/tvCardCabang_Id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:text="ID Cabang"
-            android:layout_marginTop="10dp"
+            android:background="#9F8383"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="Id Cabang"
             android:textSize="22dp"/>
         <TextView
             android:id="@+id/tvCardCabang_Nama"
