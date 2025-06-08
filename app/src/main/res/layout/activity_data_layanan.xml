@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layanan.DataLayananActivity">
+    tools:context=".layanan.DataLayananActivity"
+    android:padding="10dp">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvData_Layanan"
         android:layout_width="match_parent"

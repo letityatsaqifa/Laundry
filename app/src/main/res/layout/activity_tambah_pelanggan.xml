@@ -41,7 +41,7 @@
             android:padding="16dp"
             android:inputType="textPersonName"
             app:layout_constraintTop_toBottomOf="@id/tvNama"
-            android:background="@drawable/border"/>
+            android:background="@drawable/borderr"/>
         <TextView
             android:id="@+id/tvAlamat"
             android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
             android:padding="16dp"
             android:inputType="textPostalAddress"
             app:layout_constraintTop_toBottomOf="@id/tvAlamat"
-            android:background="@drawable/border"/>
+            android:background="@drawable/borderr"/>
         <TextView
             android:id="@+id/tvNo"
             android:layout_width="wrap_content"
@@ -78,8 +78,9 @@
             android:layout_marginTop="15dp"
             android:padding="16dp"
             android:inputType="phone"
+            android:maxLength="14"
             app:layout_constraintTop_toBottomOf="@id/tvNo"
-            android:background="@drawable/border"/>
+            android:background="@drawable/borderr"/>
         <TextView
             android:id="@+id/tvCabang"
             android:layout_width="wrap_content"
@@ -98,11 +99,13 @@
             android:padding="16dp"
             android:inputType="text"
             app:layout_constraintTop_toBottomOf="@id/tvCabang"
-            android:background="@drawable/border"/>
+            android:background="@drawable/borderr"/>
         <Button
             android:id="@+id/btnSimpan"
             android:layout_width="220dp"
             android:layout_height="60dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#776B5D"
             android:text="@string/btnSimpan"
             android:textSize="20sp"
             android:layout_marginTop="60dp"

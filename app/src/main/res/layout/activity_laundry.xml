@@ -73,63 +73,85 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginTop="10dp" />
-                <ImageView
-                    android:id="@+id/ivTransaksi"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/transaksi"
-                    android:layout_marginTop="15dp"
-                    app:layout_constraintTop_toBottomOf="@id/vLine"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/ivPelanggan" />
-                <TextView
-                    android:id="@+id/tvTransaksi"
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvTransaksi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/transaksi"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintTop_toBottomOf="@id/ivTransaksi"
-                    app:layout_constraintStart_toStartOf="@id/ivTransaksi"
-                    app:layout_constraintEnd_toEndOf="@id/ivTransaksi" />
-                <ImageView
-                    android:id="@+id/ivPelanggan"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/pelanggan"
-                    android:layout_marginTop="15dp"
                     app:layout_constraintTop_toBottomOf="@id/vLine"
-                    app:layout_constraintStart_toEndOf="@id/ivTransaksi"
-                    app:layout_constraintEnd_toStartOf="@id/ivLaporan" />
-                <TextView
-                    android:id="@+id/tvPelanggan"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:padding="22dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/ivTransaksi"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/transaksi"/>
+                        <TextView
+                            android:id="@+id/tvTransaksi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/transaksi"
+                            android:textSize="20sp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvPelanggan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Pelanggan"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintTop_toBottomOf="@id/ivPelanggan"
-                    app:layout_constraintStart_toStartOf="@id/ivPelanggan"
-                    app:layout_constraintEnd_toEndOf="@id/ivPelanggan" />
-                <ImageView
-                    android:id="@+id/ivLaporan"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/laporan"
-                    android:layout_marginTop="15dp"
                     app:layout_constraintTop_toBottomOf="@id/vLine"
-                    app:layout_constraintStart_toEndOf="@id/ivPelanggan"
-                    app:layout_constraintEnd_toEndOf="parent" />
-                <TextView
-                    android:id="@+id/tvLaporan"
+                    app:layout_constraintStart_toEndOf="@id/cvTransaksi">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="22dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/ivPelanggan"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/pelanggan"/>
+                        <TextView
+                            android:id="@+id/tvPelanggan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Pelanggan"
+                            android:textSize="20sp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvLaporan"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/Laporan"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    app:layout_constraintTop_toBottomOf="@id/ivLaporan"
-                    app:layout_constraintStart_toStartOf="@id/ivLaporan"
-                    app:layout_constraintEnd_toEndOf="@id/ivLaporan" />
+                    app:layout_constraintTop_toBottomOf="@id/vLine"
+                    app:layout_constraintStart_toEndOf="@id/cvPelanggan">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="22dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/ivLaporan"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/laporan"/>
+                        <TextView
+                            android:id="@+id/tvLaporan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Laporan"
+                            android:textSize="20sp"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
         <TextView
@@ -150,7 +172,7 @@
             android:layout_height="wrap_content"
             android:text="@string/jangan"
             android:textSize="18sp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_marginStart="10dp"
             app:layout_constraintTop_toBottomOf="@id/tvMelayani"
             app:layout_constraintStart_toStartOf="parent"/>
@@ -161,9 +183,9 @@
             android:layout_height="140dp"
             app:cardCornerRadius="20dp"
             android:layout_marginTop="15dp"
-            android:layout_marginStart="2dp"
             app:layout_constraintTop_toBottomOf="@id/tvJangan"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/Layanancv">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -171,6 +193,7 @@
                 android:orientation="vertical"
                 android:padding="16dp">
                 <ImageView
+                    android:id="@+id/ivAkun"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:src="@drawable/akun"/>
@@ -190,7 +213,9 @@
             android:layout_marginTop="15dp"
             android:layout_marginStart="15dp"
             app:layout_constraintTop_toBottomOf="@id/tvJangan"
-            app:layout_constraintStart_toEndOf="@id/cvAkun">
+            app:layout_constraintStart_toEndOf="@id/cvAkun"
+            app:layout_constraintEnd_toStartOf="@id/cvAkun"
+            app:layout_constraintBottom_toTopOf="@id/Printcv">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -226,6 +251,7 @@
                 android:orientation="vertical"
                 android:padding="16dp">
                 <ImageView
+                    android:id="@+id/ivTambahan"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/tambahkan"/>
@@ -245,7 +271,6 @@
             android:layout_height="140dp"
             app:cardCornerRadius="20dp"
             android:layout_marginTop="15dp"
-            android:layout_marginStart="2dp"
             app:layout_constraintTop_toBottomOf="@id/cvAkun"
             app:layout_constraintStart_toStartOf="parent">
             <LinearLayout
@@ -270,41 +295,15 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/Cabangcv"
-            android:layout_width="115dp"
-            android:layout_height="140dp"
-            app:cardCornerRadius="20dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="15dp"
-            app:layout_constraintTop_toBottomOf="@id/Layanancv"
-            app:layout_constraintStart_toEndOf="@id/Pegawaicv">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/cabang"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/cabang"
-                    android:layout_marginTop="5dp"
-                    android:textSize="17sp"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
             android:id="@+id/Printcv"
             android:layout_width="115dp"
             android:layout_height="140dp"
             app:cardCornerRadius="20dp"
             android:layout_marginTop="15dp"
-            android:layout_marginStart="15dp"
-            app:layout_constraintTop_toBottomOf="@id/Tambahcv"
-            app:layout_constraintStart_toEndOf="@id/Cabangcv">
+            app:layout_constraintTop_toBottomOf="@id/Layanancv"
+            app:layout_constraintStart_toEndOf="@id/Pegawaicv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -312,15 +311,47 @@
                 android:orientation="vertical"
                 android:padding="16dp">
                 <ImageView
+                    android:id="@+id/ivPrinter"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/printer"/>
+                    android:src="@drawable/printer" />
                 <TextView
+                    android:id="@+id/tvPrinter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/print"
                     android:layout_marginTop="5dp"
-                    android:textSize="17sp"/>
+                    android:text="@string/print"
+                    android:textSize="17sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cabangcv"
+        android:layout_width="115dp"
+        android:layout_height="140dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/Tambahcv"
+        app:layout_constraintStart_toEndOf="@id/Printcv">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/ivCabang"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/cabang"/>
+            <TextView
+                android:id="@+id/tvCabang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cabang"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

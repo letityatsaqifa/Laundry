@@ -2,14 +2,11 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cvLayanan"
     app:cardCornerRadius="20dp"
-    android:layout_margin="5dp"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent">
+    android:padding="5dp"
+    android:layout_margin="10dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#9F8383"
+            android:background="#8D7B68"
             android:padding="10dp"
             android:orientation="horizontal">
             <TextView
@@ -26,7 +23,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tvLabelLayanan_Id"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textSize="22sp"/>
+                android:textSize="22sp"
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/tvCardLayanan_Id"
                 android:layout_width="wrap_content"
@@ -34,15 +32,17 @@
                 android:text="-"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 android:textSize="22sp"
+                android:textStyle="bold"
                 android:layout_marginStart="10dp"/>
         </LinearLayout>
         <TextView
             android:id="@+id/tvCardLayanan_Nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:layout_marginStart="15dp"
             android:text="@string/tvCardLayanan_Nama"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:layout_marginTop="15dp"/>
         <TextView
             android:id="@+id/tvCardLayanan_Harga"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:text="@string/tvCardLayanan_Harga"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:layout_marginTop="5dp"/>
         <TextView
             android:id="@+id/tvCardLayanan_Cabang"
@@ -58,8 +58,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:text="@string/tvCardLayanan_Cabang"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btnCardLayanan_Lihat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/btnCardPelanggan_Lihat"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:backgroundTint="#B0A695"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

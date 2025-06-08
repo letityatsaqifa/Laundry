@@ -26,15 +26,146 @@
                     android:paddingEnd="10dp"
                     android:paddingBottom="5dp"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    android:text="Detail Pelanggan"/>
+                    android:text="@string/detailPelanggan"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal|center_vertical"
                     android:background="?android:attr/colorButtonNormal"
+                    android:padding="8dp"
                     android:orientation="horizontal">
-
+                    <TextView
+                        android:id="@+id/tvjudul1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tvCardPelanggan_Id"
+                        android:layout_weight="1.35"/>
+                    <TextView
+                        android:id="@+id/tvjudul2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tvCardPelanggan_Id"
+                        android:gravity="end"
+                        android:layout_weight="1.35"/>
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvNama1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/NamaPelanggan"
+                        android:layout_weight="1.35"/>
+                    <TextView
+                        android:id="@+id/tvnama2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/NamaPelanggan"
+                        android:gravity="end"
+                        android:layout_weight="1.35"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:background="?android:attr/colorButtonNormal"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvalamat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alamatPelanggan"
+                        android:layout_weight="1.35"/>
+                    <TextView
+                        android:id="@+id/tvalamat2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alamatPelanggan"
+                        android:gravity="end"
+                        android:layout_weight="1.35"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvno1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noPelanggan"
+                        android:layout_weight="1.35"/>
+                    <TextView
+                        android:id="@+id/tvno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noPelanggan"
+                        android:gravity="end"
+                        android:layout_weight="1.35"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:background="?android:attr/colorButtonNormal"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvcabang1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cabangPelanggan"
+                        android:layout_weight="1.35"/>
+                    <TextView
+                        android:id="@+id/tvcabang2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cabangPelanggan"
+                        android:gravity="end"
+                        android:layout_weight="1.35"/>
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp">
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonsunting"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/sunting"
+                        app:icon="@drawable/edit"
+                        android:textColor="#ffffff"
+                        android:backgroundTint="#776B5D"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/buttonhapus"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <Button
+                        android:id="@+id/buttonhapus"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/hapusMod"
+                        app:icon="@drawable/hapus"
+                        android:textColor="#ffffff"
+                        android:backgroundTint="#776B5D"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/buttonsunting"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +16,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Laundryy"
         tools:targetApi="31">
+        <activity
+            android:name=".akun.AkunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotaTransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProsesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PilihLayananTambahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PilihLayananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PilihPelangganActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TransaksiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".laporan.DataLaporanActivity"
+            android:exported="false" />
         <activity
             android:name=".cabang.TambahCabangActivity"
             android:exported="false" />
@@ -28,9 +67,6 @@
             android:exported="false" />
         <activity
             android:name=".tambahan.TambahTambahanActivity"
-            android:exported="false" />
-        <activity
-            android:name=".tambahan.TamabahTambahanActivity"
             android:exported="false" />
         <activity
             android:name=".tambahan.DataTambahanActivity"
@@ -49,13 +85,7 @@
             android:exported="false" />
         <activity
             android:name=".LaundryActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"/>
     </application>
 
 </manifest>
