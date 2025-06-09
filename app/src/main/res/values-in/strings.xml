@@ -189,4 +189,7 @@
     <string name="masukSandi">Masukkan Kata Sandi</string>
     <string name="masuk">Masuk</string>
     <string name="sandiSalah">Sandi Admin Salah</string>
+    <string name="cariPelnggan">Cari Data Pelanggan</string>
+    <string name="cariLayanan">Cari Data Layanan</string>
+    <string name="cariLayananTambahan">Cari Data Layanan Tambahan</string>
 </resources>

@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:queryHint="Cari Data Layanan Tambahan"/>
+        app:queryHint="@string/cariLayananTambahan"/>
     <TextView
         android:id="@+id/tvPILIH_LAYANANTAMBAHAN_Kosong"
         android:layout_width="wrap_content"

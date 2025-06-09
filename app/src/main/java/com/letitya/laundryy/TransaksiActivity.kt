@@ -140,7 +140,7 @@ class TransaksiActivity : AppCompatActivity() {
                 val nama = data.getStringExtra("namaPelanggan")
                 val nomorHP = data.getStringExtra("noHPPelanggan")
 
-                tvPelangganNama.text = "${getString(R.string.namapelanggan)} : $nama"
+                tvPelangganNama.text = "${getString(R.string.namapelanggan)} $nama"
                 tvPelangganNoHP.text = "${getString(R.string.noPelanggan)} : $nomorHP"
                 namaPelanggan = nama.toString()
                 noHP = nomorHP.toString()
@@ -155,8 +155,8 @@ class TransaksiActivity : AppCompatActivity() {
                 val nama = data.getStringExtra("nama")
                 val harga = data.getStringExtra("harga")
 
-                tvLayananNama.text = "${getString(R.string.namaLayanan)} : $nama"
-                tvLayananHarga.text = "${getString(R.string.hargaLayanan)} : $harga"
+                tvLayananNama.text = "${getString(R.string.namaLayanan)} $nama"
+                tvLayananHarga.text = "${getString(R.string.hargaLayanan)} $harga"
                 namaLayanan = nama.toString()
                 hargaLayanan = harga.toString()
             }

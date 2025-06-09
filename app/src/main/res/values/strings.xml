@@ -188,4 +188,7 @@
     <string name="masukSandi">masukSandi</string>
     <string name="masuk">masuk</string>
     <string name="sandiSalah">sandi salah</string>
+    <string name="cariPelnggan">cari</string>
+    <string name="cariLayanan">cari</string>
+    <string name="cariLayananTambahan">cari</string>
 </resources>

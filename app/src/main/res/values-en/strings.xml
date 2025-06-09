@@ -189,4 +189,7 @@
     <string name="masukSandi">Enter Password</string>
     <string name="masuk">Enter</string>
     <string name="sandiSalah">Wrong Admin Password</string>
+    <string name="cariPelnggan">Search for Data Customer</string>
+    <string name="cariLayanan">Search for Data Services</string>
+    <string name="cariLayananTambahan">Search for Data Additional Services</string>
 </resources>

@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:queryHint="Cari Data Pelanggan"/>
+        app:queryHint="@string/cariLayanan"/>
     <TextView
         android:id="@+id/tvPILIH_LAYANAN_Kosong"
         android:layout_width="wrap_content"
@@ -29,6 +29,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPilih_Layanan"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/cardpilihlayanan"/>
+        android:layout_height="0dp"
+        tools:listitem="@layout/cardpilihlayanan"
+        app:layout_constraintTop_toBottomOf="@id/svPilihLayanan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
